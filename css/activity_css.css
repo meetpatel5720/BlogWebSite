@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    min-width: 325px;
+}
+
+.page-container{
+    background-color: white;
+    position: relative;
+    width: calc(100% - 225px);
+    left: 225px;
+    padding: 1.5rem;
+}
+
+/*drop menu for user profile and setting*/
+.dropmenu{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 100%;
+    background-color: #333;
+    -webkit-box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.75);
+}
+.dropmenu a{
+    float: none;
+    color: white;
+    padding: .75rem 1rem;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+
+.side-nav{
+    border-top: 1px black solid;
+}
+
+@media (min-width: 768px){
+    .side-nav {
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        width: 225px;
+        background-color: #333;
+
+    }
+    ul.side-nav {
+        list-style: none;
+        padding: 0;
+    }
+    .side-nav a{
+        width: 225px;
+        color: white;
+    }
+    .active{
+        background-color: black;
+    }
+}
+
+.navbar-collapse>ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.side-nav{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.side-nav>li>a{
+    width: 100%;
+}
+.side-nav>li>ul{
+    margin-left: -2.5rem;
+    list-style: none;
+}
+.side-nav>li>ul>li>a{
+    width: 100%;
+    padding: .75rem 2.1rem;
+}
+
+/*image class for posts table*/
+.post-img {
+    max-height: 20px;
+    width: 50px;
+    object-fit: contain;
+    display: block;
+}
+
+.post-img-edit {
+    max-height: 150px;
+    object-fit: contain;
+    display: block;
+    margin-bottom:8px;
+}
+.user-img-edit {
+    max-width: 100px;
+    object-fit: contain;
+    display: block;
+    margin-bottom:8px;
+}
+
+/* Flot Chart Containers */
+
+.flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* Custom Colored Panels */
+
+.huge {
+    font-size: 40px;
+}
+.panel-blue {
+    border-color: #007bff;
+}
+
+.panel-blue .panel-heading {
+    border-color: #007bff;
+    color: #fff;
+    background-color: #007bff;
+}
+
+.panel-blue a {
+    color: #007bff;
+}
+
+.panel-blue a:hover {
+    color: #004a99;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green a {
+    color: #5cb85c;
+}
+
+.panel-green a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red a {
+    color: #d9534f;
+}
+
+.panel-red a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow a {
+    color: #f0ad4e;
+}
+
+.panel-yellow a:hover {
+    color: #df8a13;
+}
+
+.post-preview img{
+    max-height: 300px;
+    width: 60%;
+    object-fit: contain;
+    display: block;
+}
