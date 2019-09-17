@@ -215,7 +215,6 @@
                         });
                     });
                     //unlike
-
                     $(document).on('click','.unlike', function(){
                         $.ajax({
 
@@ -242,8 +241,6 @@
                         window.location.href = "login.php";
                     });
                 }
-
-
             });
         </script>
 
